@@ -28,4 +28,4 @@ def calculate():
     return render_template('result.html', bmi=bmi, result=result, image=image)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=80)
